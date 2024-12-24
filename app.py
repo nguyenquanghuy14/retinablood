@@ -5,15 +5,11 @@ import numpy as np
 import cv2
 from tensorflow.keras.models import load_model
 from PIL import Image
-
 app = Flask(__name__)
-
 import os
-
 # Tạo đường dẫn động để luôn tìm đúng file, bất kể môi trường chạy
 model_path = os.path.join(os.path.dirname(__file__), "retina_vessel_segmentation.keras")
 model = load_model(model_path)
-
 
 # Kích thước ảnh đầu vào
 IMG_HEIGHT, IMG_WIDTH = 512, 512
