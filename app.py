@@ -9,7 +9,7 @@ from PIL import Image
 app = Flask(__name__)
 
 # Đường dẫn tới mô hình đã huấn luyện
-model_path = "path_to_your_model/retina_vessel_segmentation.keras"
+model_path = "retina_vessel_segmentation.keras"
 model = load_model(model_path)
 
 # Kích thước ảnh đầu vào
